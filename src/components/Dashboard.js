@@ -2,7 +2,7 @@ import React , { useState} from 'react'
 import { Button, Card, Alert } from 'react-bootstrap'
 import { useAuth } from '../context/Authcontext'
 import {Link, useNavigate} from "react-router-dom"
-export default function Dashboard() {
+const Dashboard = () => {
     const [error,setError] = useState()
     const {currentUser,logOut} = useAuth()
     const navigate = useNavigate()
@@ -32,3 +32,4 @@ export default function Dashboard() {
   )
 }
 
+export default Dashboard

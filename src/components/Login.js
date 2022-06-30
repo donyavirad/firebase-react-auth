@@ -2,7 +2,7 @@ import React, {useRef, useState} from 'react'
 import { Card, Form, Button, Alert } from 'react-bootstrap'
 import { useAuth } from '../context/Authcontext'
 import {Link, useNavigate} from "react-router-dom"
-export default function Lpgin() {
+const Login = () => {
     const emailRef = useRef()
     const passwordRef = useRef()
     const { login } = useAuth()
@@ -51,3 +51,5 @@ export default function Lpgin() {
     </>
   )
 }
+
+export default  Login

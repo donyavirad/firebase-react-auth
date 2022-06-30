@@ -2,7 +2,7 @@ import React, {useRef, useState} from 'react'
 import { Card, Form, Button, Alert } from 'react-bootstrap'
 import { useAuth } from '../context/Authcontext'
 import { Link, useNavigate } from "react-router-dom"
-export default function UpdateProfile() {
+const UpdateProfile=() => {
     const emailRef = useRef()
     const passwordRef = useRef()
     const passwordConfirmRef = useRef()
@@ -62,3 +62,5 @@ export default function UpdateProfile() {
     </>
   )
 }
+
+export default  UpdateProfile

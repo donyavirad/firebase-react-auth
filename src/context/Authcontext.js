@@ -7,7 +7,7 @@ export const useAuth = ()=>{
     return useContext(AuthContext)
 }
 
-export  function AuthProvider(props) {
+export  const AuthProvider = (props) =>{
     const [currentUser, SetCurrentUser] = useState()
     const auth = getAuth(firebaseApp)
     const signup =(email,password)=>{
